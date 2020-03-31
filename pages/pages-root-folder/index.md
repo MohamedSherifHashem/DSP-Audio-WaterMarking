@@ -12,12 +12,14 @@ widget1:
   url: 'https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/design/'
   image: widget-1-302x182.jpg
   text: 'check out our design'
-widget2: widget-1-302x182.jpg
+widget2: 
   title: "How to use it ?"
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/getting-started/'
+  image: widget-1-302x182.jpg
   text: 'Start watermarking your audio now ...'
-widget3:widget-1-302x182.jpg
+widget3:
   title: "Related Work"
+  image:widget-1-302x182.jpg
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
   text: 'Check out what other techniques people use'
 #
