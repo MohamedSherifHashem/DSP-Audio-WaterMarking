@@ -13,4 +13,4 @@ header:
 
 The image below shows a simple watermarking model and the different processes the signal goes through.
 image: design.png
----
+
