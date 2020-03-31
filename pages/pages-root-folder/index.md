@@ -29,10 +29,15 @@ widget3:
 # To style the button in different colors, use no value
 # to use the main color or success, alert or secondary.
 # To change colors see sass/_01_settings_colors.scss
-
+#
+callforaction:
+  url: https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/roadmap/
+  text: Check new features  ›
+  style: alert
+permalink: /index.html
+#
 # This is a nasty hack to make the navigation highlight
 # this page as active in the topbar navigation
 #
 homepage: true
 ---
-
