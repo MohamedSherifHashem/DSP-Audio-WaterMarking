@@ -4,14 +4,14 @@ title: "Roadmap"
 subheadline: "ToDo-List &amp; Ideas"
 teaser: "Possible updates for the future."
 header:
-   image_fullwidth: Roadmap.jpg
+   image_fullwidth: header_roadmap_3.jpg
 permalink: "/roadmap/"
 ---
 
 ## Ideas and possible new features
 {: .t30 }
 
-Design in progress .....
+*Design in progress .....
 
 
 
