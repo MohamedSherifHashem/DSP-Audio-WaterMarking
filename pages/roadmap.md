@@ -11,7 +11,7 @@ permalink: "/roadmap/"
 ## Ideas and possible new features
 {: .t30 }
 
-*Design in progress .....
+Design in progress .....
 
 
 
