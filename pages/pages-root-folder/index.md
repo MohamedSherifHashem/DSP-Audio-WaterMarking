@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
-  image_fullwidth: header_unsplash_12.jpg
+  urlimg: "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/logo.jpg"
 widget1:
   title: "Design"
   url: 'https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/design/'
