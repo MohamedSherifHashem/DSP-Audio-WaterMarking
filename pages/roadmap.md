@@ -4,7 +4,7 @@ title: "Roadmap"
 subheadline: "ToDo-List &amp; Ideas"
 teaser: "Possible updates for the future."
 header:
-   image_fullwidth: "header_roadmap_3.jpg"
+   image_fullwidth: "Roadmap.jpg"
 permalink: "/roadmap/"
 ---
 
