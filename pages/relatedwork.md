@@ -1,4 +1,4 @@
--
+
 layout: page-fullwidth
 title: "Related Work"
 teaser: "The documentation is a work in progress..."
@@ -12,6 +12,7 @@ header:
 ## Simple watermarking model 
 
 The image below shows a simple watermarking model and the different processes the signal goes through.
+
 <html>
 <body>
 
