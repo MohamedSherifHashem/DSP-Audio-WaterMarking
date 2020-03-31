@@ -10,7 +10,3 @@ permalink: "/getting-started/"
 ---
 In Progress ....
 
-<a class="radius button small" href="{{ site.url }}{{ site.baseurl }}/documentation/">Check out the documentation for all the tricks ›</a>
-
-
- [1]: {{ site.url }}{{ site.baseurl }}/documentation/
