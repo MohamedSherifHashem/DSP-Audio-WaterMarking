@@ -5,7 +5,8 @@ meta_title: " Changelog"
 subheadline: " Theme Changelog"
 teaser: "History and Version Updates for the project"
 header:
-   image_fullwidth: "change.PNG"
+    image: "change.png"
+    background-color: "#fabb00"
 permalink: "/changelog/"
 ---
 
