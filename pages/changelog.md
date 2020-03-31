@@ -5,7 +5,8 @@ meta_title: " Changelog"
 subheadline: " Theme Changelog"
 teaser: "History and Version Updates for the project"
 header: no
-image: "change.PNG"
+image: 
+    title : change.PNG
     
 permalink: "/changelog/"
 ---
