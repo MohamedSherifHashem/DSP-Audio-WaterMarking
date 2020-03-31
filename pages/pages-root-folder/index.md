@@ -14,12 +14,10 @@ widget1:
   text: 'check out our design'
 widget2: 
   title: "How to use it ?"
-  image: widget-1-302x182.jpg
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/getting-started/'
   text: 'Start watermarking your audio now ...'
 widget3:
   title: "Related Work"
-  image: widget-1-302x182.jpg
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
   text: 'Check out what other techniques people use'
 #
