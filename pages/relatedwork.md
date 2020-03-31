@@ -16,7 +16,7 @@ The image below shows a simple watermarking model and the different processes th
 <body>
 
 <h2>HTML Image</h2>
-<img src="design.png"  width="500" height="333">
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/tree/gh-pages/images/design.png"  width="500" height="333">
 
 </body>
 </html>
