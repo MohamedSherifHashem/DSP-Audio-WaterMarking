@@ -2,11 +2,12 @@
 layout: page
 title: "Change is good!"
 meta_title: " Changelog"
-subheadline: " Theme Changelog"
+subheadline: "Changelog"
 teaser: "History and Version Updates for the project"
-header: no
-image: 
-    title : change.PNG
+header:
+    image_fullwidth: "change.PNG"
+    caption: Change
+    
     
 permalink: "/changelog/"
 ---
