@@ -4,9 +4,9 @@ title: "Change is good!"
 meta_title: " Changelog"
 subheadline: " Theme Changelog"
 teaser: "History and Version Updates for the project"
-header:
-    image: "change.PNG"
-    background-color: "#fabb00"
+header:no
+image: "change.PNG"
+    
 permalink: "/changelog/"
 ---
 
