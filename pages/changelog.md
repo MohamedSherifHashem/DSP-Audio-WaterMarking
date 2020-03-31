@@ -4,6 +4,7 @@ title: "Change is good!"
 meta_title: " Changelog"
 subheadline: "Changelog"
 teaser: "History and Version Updates for the project"
+logo: no
 header:
     image_fullwidth: "change.PNG"
     caption: Change
