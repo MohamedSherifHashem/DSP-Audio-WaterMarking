@@ -7,7 +7,7 @@
   side: left
 
 - title: "Reports"
-  url: "/reports/"
+  url: "/report/"
   side: left
   dropdown:
   - title: "Background"
