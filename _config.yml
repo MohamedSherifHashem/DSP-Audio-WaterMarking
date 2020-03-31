@@ -41,6 +41,8 @@ baseurl: '/DSP-Audio-WaterMarking'
 #urlimg: 'https://phlow.github.io/feeling-responsive/images/'
 
 
+# Logo size is 600x80 pixels
+logo: "logo.PNG"
 
 
 
