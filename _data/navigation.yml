@@ -7,15 +7,15 @@
   side: left
 
 - title: "Reports"
-  url: "/header/"
+  url: "/reports/"
   side: left
   dropdown:
   - title: "Final Report"
-    url: "/design/grid/"
+    url: "/finalreport/"
   - title: "Background"
-    url: "/design/typography/typography/"
+    url: "/background/"
   - title: "Related Work"
-    url: "/design/typography/typography/"
+    url: "/relatedwork/"
  
 
 - title: "Design"
