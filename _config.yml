@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title: 'DSP Audio WaterMarking'
+title:
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 #slogan: ' Customizable Watermarking made easy'
@@ -17,7 +17,7 @@ title: 'DSP Audio WaterMarking'
 description: '»A simple, open source and reliable watermarking program for all the amateur content creators out there .'
 
 # The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
-credits: '<p>Created with &hearts; by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+
 
 # Main author of the website
 # See > authors.yml
