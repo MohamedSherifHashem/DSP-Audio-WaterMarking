@@ -3,7 +3,6 @@ layout: page-fullwidth
 title: "Related Work"
 teaser: "The documentation is a work in progress..."
 permalink: "/documentation/"
-header:
 
 
 
@@ -17,7 +16,7 @@ The image below shows a simple watermarking model and the different processes th
 <body>
 
 <h2>HTML Image</h2>
-<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/tree/gh-pages/images/design.png"  width="500" height="333">
+<img src="https://lh6.googleusercontent.com/hyyV-8N-OkofM4wv-uYPsQruTh57eJm8cWHA0-UtglXm6iNj-4iEArqKPcwyKfAjtvKC6pIN1j6PSBYzSxJfwTWEgksCBpv_fuB2khCg"  width="500" height="333">
 
 </body>
 </html>
