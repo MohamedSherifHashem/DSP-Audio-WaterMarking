@@ -6,7 +6,7 @@
 #
 layout: frontpage
 header:
- image_fullwidth:  "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/logo.jpg"
+ image_fullwidth:  "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/tree/gh-pages/images/logo.jpg"
 widget1:
   title: "Design"
   url: 'https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/design/'
@@ -17,7 +17,7 @@ widget2:
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/getting-started/'
   text: 'Start watermarking your audio now ...'
 widget3:
-  title: "Related Work.."
+  title: "Related Work."
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
   text: 'Check out what other techniques people use'
 #
