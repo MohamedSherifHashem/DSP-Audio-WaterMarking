@@ -10,8 +10,6 @@
   url: "/reports/"
   side: left
   dropdown:
-  - title: "Final Report"
-    url: "/finalreport/"
   - title: "Background"
     url: "/background/"
   - title: "Related Work"
