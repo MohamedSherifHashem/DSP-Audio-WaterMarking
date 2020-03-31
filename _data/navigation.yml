@@ -1,4 +1,4 @@
-- title:Home Page
+- title: Home Page
   url: "/"
   side: left
 
@@ -59,7 +59,3 @@
   - title: "Roadmap"
     url: "/roadmap/"
 
-
-- title: "Contact"
-  url: "/contact/"
-  side: right
