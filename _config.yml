@@ -8,7 +8,7 @@
 #                                                 /____/
 #
 # Title of your website
-title:
+title: 'DSP- Audio-Watermarking'
 
 # The slogan describes your website and is used on homepage in <title> and other important places
 slogan: ' Customizable Watermarking made easy'
@@ -40,7 +40,7 @@ urlimg: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/images/'
 
 
 # Logo size is 600x80 pixels
-
+logo:'logo3.PNG'
 
 # Plugins
 plugins:
