@@ -1,11 +1,13 @@
-
-layout: page-fullwidth
-title: "Related Work"
-teaser: "The documentation is a work in progress..."
-permalink: "/documentation/"
-
-
-
+---
+layout: page
+show_meta: false
+title: "Getting Started"
+subheadline: "A Step-by-Step Guide"
+teaser: "This step-by-step guide helps you run the program and watermark your audio."
+header:
+   image_fullwidth:
+permalink: "/getting-started/"
+---
 
 
 ## Simple watermarking model 
