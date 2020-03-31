@@ -42,8 +42,7 @@ baseurl: '/DSP-Audio-WaterMarking'
 
 
 # Logo size is 600x80 pixels
-logo:
-     image_fullwidth: "logo.PNG"
+image_fullwidth: "logo.PNG"
 
 
 
