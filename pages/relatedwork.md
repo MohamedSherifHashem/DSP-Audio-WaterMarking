@@ -4,7 +4,8 @@ show_meta: false
 title: "Related Work"
 subheadline: "Audio WaterMarking Techniques "
 teaser: "Different watermarking techniques and their different attributes."
-header: no
+header: 
+    image_fullwidth: "Related.PNG"
 permalink: "/relatedwork/"
 ---
 
