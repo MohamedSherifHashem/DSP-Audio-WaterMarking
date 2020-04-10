@@ -35,7 +35,7 @@ urlimg: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/images/'
 
 
 # Logo size is 600x80 pixels
-logo: 'logo.PNG'
+logo: 'log.PNG'
 # Plugins
 plugins:
     - jekyll-asciidoc
