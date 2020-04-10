@@ -20,7 +20,7 @@ widget2:
 widget3:
   title: "Related Work"
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
-  video: '<a href="#" data-reveal-id="videoModal"><img src="https://www.youtube.com/watch?v=tU8WbB9vhDg" width="302" height="182" alt=""/></a>'
+  image: header_typewriter.jpg
   text: 'Check out what other techniques people use'
 #
 # Use the call for action to show a button on the frontpage
