@@ -15,10 +15,12 @@ widget1:
 widget2: 
   title: "How to use it ?"
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/getting-started/'
+  image: widget-github-303x182.jpg
   text: 'Start watermarking your audio now ...'
 widget3:
   title: "Related Work"
   url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
+  video: '<a href="#" data-reveal-id="videoModal"><img src="https://www.youtube.com/watch?v=tU8WbB9vhDg" width="302" height="182" alt=""/></a>'
   text: 'Check out what other techniques people use'
 #
 # Use the call for action to show a button on the frontpage
