@@ -21,7 +21,7 @@
   side: left
 
 - title: Documentation
-  url: "/Changelog/"
+  url: "/changelog/"
   side: left
   dropdown:
   - title: "Changelog"
