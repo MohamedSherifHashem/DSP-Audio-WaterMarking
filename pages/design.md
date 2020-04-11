@@ -1,9 +1,9 @@
 ---
 layout: page
 show_meta: false
-title: "Style your content!"
-subheadline: "Layouts of Feeling Responsive"
-header:
-   image_fullwidth: "d.PNG"
+title: "Design"
+teaser: "In this section we discuss different parts of our design and how we implement it."
+header: 
+    image_fullwidth: "d.PNG"
 permalink: "/design/"
 ---
