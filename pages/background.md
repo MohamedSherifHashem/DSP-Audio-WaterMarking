@@ -33,4 +33,8 @@ permalink: "/background/"
 <h5>Blind vs. Non-Blind Watermark Detection: </h5>
 <body>Blind detection means that the watermarking system can detect and extract the watermark without prior knowledge of the unwatermarked audio signal.Of course a non-blind watermark extraction would result in a more efficient watermark extraction but tha knowledge of the original is not always available.</body>
 
+<h5>Tradeoffs: </h5>
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/tradeoff.PNG?raw=true" width="500" height="333">
+<body>All the above characteristics are desirable in any system, but there exists a tradeoff between three of them</body>
+
 
