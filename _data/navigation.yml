@@ -7,7 +7,7 @@
   side: left
 
 - title: "Reports"
-  url: "/report/"
+  url: "/background/"
   side: left
   dropdown:
   - title: "Background"
@@ -21,7 +21,7 @@
   side: left
 
 - title: Documentation
-  url: "/documentation/"
+  url: "/Changelog/"
   side: left
   dropdown:
   - title: "Changelog"
