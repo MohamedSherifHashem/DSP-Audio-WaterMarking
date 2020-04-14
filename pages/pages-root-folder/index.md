@@ -19,7 +19,7 @@ widget2:
   text: 'Start watermarking your audio now ...'
 widget3:
   title: "Related Work"
-  url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/reports/relatedwork/'
+  url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/relatedwork/'
   image: header_typewriter.jpg
   text: 'Check out what other techniques people use'
 #
