@@ -8,7 +8,8 @@ header:
    image_fullwidth: "start.PNG"
 permalink: "/getting-started/"
 ---
-Github Repository: https://github.com/kpisila/AudioWatermarking
-
+<html>
+<a href=" https://github.com/kpisila/AudioWatermarking">Go to Github Repository.</a>
+   </html>
 In Progress .......
 
