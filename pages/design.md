@@ -33,4 +33,5 @@ permalink: "/design/"
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_B.PNG?raw=true"  width="500" height="333">
     <body>Images source:"https://www.researchgate.net/publication/2267187_Digital_Music_Distribution_and_Audio_Watermarking"</body>
-
+<h2> Design Results</h2>
+<code>code example</code>
