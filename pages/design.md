@@ -10,8 +10,23 @@ permalink: "/design/"
 <html>
 <body>
 <h2>Echo watermarking model</h2>
-<h5>Our design is an implementation of the echo watermarking technique.The goal of the echo watermarking is to embed the watermark information in the original audio signal resulting in a watermarked audio with a nearly inaudiable watermark. The basic concept behind it is that we introduce a repeated version of a component of the audio signal and manipulating the offset, initial amplitude and decay rate as to produce an imperceptible watermark. </h5>
+<body>Our design is an implementation of the echo watermarking technique.The goal of the echo watermarking is to embed the watermark information in the original audio signal resulting in a watermarked audio with a nearly inaudiable watermark. The basic concept behind it is that we introduce a repeated version of a component of the audio signal and manipulating the offset, initial amplitude and decay rate as to produce an imperceptible watermark. </body>
+
+<h5>Step 1: Dividing audio stream</h5>
+<body>The first step is to divide the audio stream into segments as illustrated in part B of the figure below.</body>
+
+<h5>Step 2: Echo signals</h5>
+<body>After dividing the audio we then produce two echo signals with different delay times as shown in part C of the figure below. </body>
+
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_A.PNG?raw=true"  width="500" height="333">
+
+<h5>Step 3: Echo creation</h5>
+<body>Part D in the diagram below illustrates the echo creation step.</body>
+
+<h5>Step 4: Watermarking</h5>
+<body>To embed the watermark bitstream, fade between the two kernels using “mixer” signals as illustrated in part E below.</body>
+
+
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_B.PNG?raw=true"  width="500" height="333">
-  
+    <body>Images source:"https://www.researchgate.net/publication/2267187_Digital_Music_Distribution_and_Audio_Watermarking"</body>
 
