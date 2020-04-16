@@ -38,4 +38,4 @@ permalink: "/design/"
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
 
 <h5> 512 Peaks </h5>
-<img src= " https://github.com/kpisila/AudioWatermarking/blob/master/Ben/peeks%20and%20peek512.png?raw=true"  width="500" height="333">
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/peak512.png?raw=true"  width="500" height="333">
