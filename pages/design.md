@@ -40,6 +40,18 @@ permalink: "/design/"
 <h5> 512 Peaks </h5>
 <img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/peak512.png?raw=true"  width="500" height="333">
 
+<h2> Taking Watermark as input from User </h2>
+
+<pre>
+  <code>
+   bitstream = addwatermark();
+   AddEchoFunction(bitstream);
+    
+    %disp('Error, Must be 10 characters!');% if user input is not exactly 10, error pops up
+  </code>
+</pre>
+
+
 <h2> Adding the watermark </h2>
 
 <pre>
