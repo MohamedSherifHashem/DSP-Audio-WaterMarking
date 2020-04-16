@@ -33,5 +33,7 @@ permalink: "/design/"
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_B.PNG?raw=true"  width="500" height="333">
     <body>Images source:"https://www.researchgate.net/publication/2267187_Digital_Music_Distribution_and_Audio_Watermarking"</body>
-<h2> Design Results</h2>
-<code>code example</code>
+<h2>Output of our Design</h2>
+<body>The image below shows the output audio of our code, which shows a 2 output audios with different delay, 256 and 512.</body>
+<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
+<code></code>
