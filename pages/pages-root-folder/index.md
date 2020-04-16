@@ -9,7 +9,7 @@ header:
  image_fullwidth: logo.jpg
 widget1:
   title: "Design"
-  url: 'https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/design/'
+  url: 'https://mohamedsherifhashem.github.io/DSP-Audio-WaterMarking/design/'
   image: widget-1-302x182.jpg
   text: 'check out our design'
 widget2: 
