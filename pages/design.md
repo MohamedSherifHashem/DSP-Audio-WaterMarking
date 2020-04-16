@@ -36,4 +36,6 @@ permalink: "/design/"
 <h2>Output of our Design</h2>
 <body>The image below shows the output audio of our code, which shows a 2 output audios with different delay, 256 and 512.</body>
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
-<code></code>
+
+<h5> 512 Peaks </h5>
+<img src=" https://github.com/kpisila/AudioWatermarking/blob/master/Ben/peeks%20and%20peek512.png?raw=true"  width="500" height="333">
