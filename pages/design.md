@@ -41,7 +41,7 @@ permalink: "/design/"
 <img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/peak512.png?raw=true"  width="500" height="333">
 
 <h2> Adding the watermark </h2>
-<code>function bitstream=addwatermark()
+<code> "function bitstream=addwatermark()
 
 
 c = [1,50]; % setting a limit on input length
@@ -77,5 +77,5 @@ b = size(code); % getting the size of user input
   disp('Thank you, your word is stored'); 
 
  end
-end
+end"
 </code>
