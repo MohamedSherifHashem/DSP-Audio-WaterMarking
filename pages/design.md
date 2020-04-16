@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: wide
 show_meta: false
 title: "Design"
 teaser: "In this section we discuss different parts of our design and how we implement it."
@@ -50,7 +50,9 @@ permalink: "/design/"
 
 </h1>
 
-<h2> Taking Watermark as input from User </h2>
+<h2>
+    Taking Watermark as input from User
+</h2>
 
 <pre>
   <code>
