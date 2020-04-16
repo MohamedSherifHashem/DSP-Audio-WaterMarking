@@ -44,7 +44,12 @@ permalink: "/design/"
 <h5> Graphical Example of Output Bit = 1  </h5>
 <img src= "https://github.com/kpisila/AudioWatermarking/blob/master/Ben/Graphical%20Example%20of%20Output%20Bit%20=%201.png?raw=true"  width="500" height="333">
 
-<h1> Sample Code Blocks </h1>
+
+<h1> 
+                                                           Sample Code Blocks
+
+</h1>
+
 <h2> Taking Watermark as input from User </h2>
 
 <pre>
