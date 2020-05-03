@@ -16,9 +16,9 @@ permalink: "/design/"
 <body>A simple block diagram for echo watermarking is shown below.</body>
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo.PNG?raw=true"  width="500" height="333">
 
-<h5>Audio Demo :</h5>
+<h5>Audio Demo</h5>
 
-<audio src="images/Queen(GreatestHitsI)-(3)KillerQueen.mp3" type="audio/mp3" controls="controls"></audio>
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Queen(GreatestHitsI)-(3)KillerQueen.mp3" type="audio/mp3" controls="controls"></audio>
 
 <h5>Step 1: Dividing audio stream</h5>
 <body>The first step is to divide the audio stream into segments as illustrated in part B of the figure below.</body>
