@@ -16,7 +16,7 @@ permalink: "/design/"
 <body>A simple block diagram for echo watermarking is shown below.</body>
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo.PNG?raw=true"  width="500" height="333">
 
-<h5>AudioDemo</h5>
+<h5>Audio Demo</h5>
 
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Queen(GreatestHitsI)-(3)KillerQueen.mp3?raw=true" type="audio/mp3" controls="controls"></audio>
 
