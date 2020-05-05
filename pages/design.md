@@ -365,9 +365,9 @@ Alireza (2020). Watermarking an image into an audio file using Least Significant
 
 <h2> Amplitude of input audio</h2>
 
-<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/input_amplitude.png?raw=true"  width="400" height="400">
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/input_amplitude.png?raw=true"  width="700" height="400">
 
 <h2> Output Amplitude </h2>
-<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/output_amplitude.png?raw=true"  width="400" height="400">
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/output_amplitude.png?raw=true"  width="700" height="400">
 
 
