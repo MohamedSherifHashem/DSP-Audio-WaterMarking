@@ -38,3 +38,23 @@ permalink: "/background/"
 <body>All the above characteristics are desirable in any system, but there exists a tradeoff between three of them. As a result w have to balance these propertiess to match the requirments of our application,for example if we want our technique to be robust we have to be ready to give up the inaudiability property and vice versa, so it depends on the functions,priorities and requirments.</body>
 
 
+<h2>Types of audio watermarking </h2>
+
+<h5>Audio in Audio: </h5>
+<body>Hiding an audio message inside the original audio signal.</body>
+
+<h5>Image in Audio: </h5>
+<body>Hiding an image inside the original audio signal.</body>
+
+<h5>Text in Audio: </h5>
+<body>Hiding a text message inside the original audio signal.</body>
+
+<h2>How to measure effiency of watermarking technique</h2>
+
+<h5> Mean Square Error: </h5>
+Described as a signal fidelity measure, the goal of to compare two signals by providing a
+quantitative score that describes the level of error/distortion between them.
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/MSE.PNG?raw=true" width="500" height="333">
+X represents the original signal while Y represents the watermarked signal.
+
