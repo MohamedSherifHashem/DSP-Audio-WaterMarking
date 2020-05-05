@@ -334,3 +334,6 @@ end
 <h5> Output Audio </h5>
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/outputfile.wav?raw=true?" type="audio/wav" controls="controls"></audio>
 
+<body> Mean-square error = 0.1830 </body>
+
+
