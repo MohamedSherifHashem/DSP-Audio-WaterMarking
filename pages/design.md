@@ -54,7 +54,7 @@ permalink: "/design/"
 
 <h5>Demo of Original Audio</h5>
 
-<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/OriginalWAVTHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
 
 <h1> 
                                                            Sample Code Blocks
