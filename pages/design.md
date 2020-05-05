@@ -48,6 +48,10 @@ permalink: "/design/"
 <h5> Graphical Example of Output Bit = 1  </h5>
 <img src= "https://github.com/kpisila/AudioWatermarking/blob/master/Ben/Graphical%20Example%20of%20Output%20Bit%20=%201.png?raw=true"  width="500" height="333">
 
+<h5>Demo of Watermarked Audio</h5>
+
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/mp3" controls="controls"></audio>
+
 
 <h1> 
                                                            Sample Code Blocks
