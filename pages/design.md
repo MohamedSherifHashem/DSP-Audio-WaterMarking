@@ -318,7 +318,7 @@ end
 
 <h2>Least significant bit watermarking </h2>
 
-<body>Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original dominate bits.</body>
+<body>Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original audio file.</body>
 
 <h3> Image in Audio</h3>
 <body>By using the LSB technique, we are trying to embed an image in an audio signal. Most of the prior works have used one major operation to achieve this, the Discrete Cosine Transform (DCT). What this does is take an image which is in N by M pixels, then separated into 8 by 8 or 16 by 16 array of integers. Basically, this is used to break down the image into small parts. This can be mathematically expressed as:</body>
