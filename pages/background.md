@@ -55,7 +55,7 @@ permalink: "/background/"
 <body>Described as a signal fidelity measure, the goal of to compare two signals by providing a
 quantitative score that describes the level of error/distortion between them.</body>
 
-<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/MSE.PNG?raw=true" width="250" height="300">
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/MSE.PNG?raw=true" width="333" height="200">
 
 <body>X represents the original signal while Y represents the watermarked signal.</body>
 
