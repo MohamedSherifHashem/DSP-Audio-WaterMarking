@@ -324,7 +324,7 @@ end
 <body>By using the LSB technique, we are trying to embed an image in an audio signal. Most of the prior works have used one major operation to achieve this, the Discrete Cosine Transform (DCT). What this does is take an image which is in N by M pixels, then separated into 8 by 8 or 16 by 16 array of integers. Basically, this is used to break down the image into small parts. This can be mathematically expressed as:</body>
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/cm.PNG?raw=true"  width="200" height="333">
-<body>      Once the image is broken down into binary bits, you divide the audio into equal parts, apply LSB, and add the image and audio together.</body>
+<body>      Once the image is broken down into binary bits, you divide the audio into equal parts, apply LSB, and add the image and audio together.By using the Mean Squared Erro to check the difference between the two audio files. It gave an error of .0025. Which is exceptionally good conisdering 0 correlates to identical signals.</body>
 
 <h2>Extracting the image:</h2>
 <body>Essentially, extracting the image from the watermarked file is a very similar process. Divide the audio file with embedded image into equal parts and subtract the original signal. Once that is down apply the inverse of the DCT which can be described mathematically as:</body>
