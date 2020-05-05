@@ -40,7 +40,7 @@ permalink: "/design/"
 
 <h2>Output of our Design Version 1</h2>
 <body>To read out the value of the delay from the watermarked audio we used Cepstrum Analysis. The cepstrum is defined by:
-<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.png?raw=true"  width="500" height="333">
+<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.jpg?raw=true"  width="500" height="333">
 The image below shows the cepstrum of the output audio of our code, which shows 2 output audios with different delays, 256 and 512.</body>
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
 
@@ -50,7 +50,7 @@ When the maximum value near the expected peak location is more than a certain nu
 To determine which value to use to provide the best overall results we ran the same watermarked audio through with different thresholds.
 <img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/CepstrumErrorPercent.png?raw=true"  width="500" height="333">
 even at the optimal level the error percentage was above 50% so we changed our analysis to the Auto Correlated Cepstrum which is defined by:
-<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/autoceps.png?raw=true"  width="500" height="333">
+<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/autoceps.jpg?raw=true"  width="500" height="333">
 Below is the result of determining the optimal threshold for determining a peak.
 <img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/AutoCepstrumErrorPercent.png?raw=true"  width="500" height="333">
 The optimal value was still not providing good enough results even though the Auto-Cepstrum appears far superior as shown below:
