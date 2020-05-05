@@ -321,6 +321,8 @@ end
 <body>Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original dominate bits.</body>
 
 <h5>Example:</h5>
+<body>To hide the letter A whose binary value is 01000001, we would replace the LSBs of the original audio with the binary value of A.
+    1001011<mark>0</mark> 1000110<mark>1</mark> 1101001<mark>0</mark> 0100101<mark>0</mark> 0010011<mark>0</mark> 0100001<mark>0</mark> 0001010<mark>0</mark> 0101011<mark>1</mark>
 
 
 
