@@ -325,5 +325,12 @@ end
     1001011<mark>0</mark> 1000110<mark>1</mark> 1101001<mark>0</mark> 0100101<mark>0</mark> 0010011<mark>0</mark> 0100001<mark>0</mark> 0001010<mark>0</mark> 0101011<mark>1</mark>
 
 
+<h3>Text in Audio LSB</h5>
 
+<h5>Original Audio </h5>
+
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/w.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5> Output Audio </h5>
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/outputfile.wav?raw=true?" type="audio/wav" controls="controls"></audio>
 
