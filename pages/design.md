@@ -342,13 +342,8 @@ Below is sample of the image in and image out:</body>
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/ball_out.PNG?raw=true"  width="200" height="200">
 
-<body> Image Sources "Pattanshetti, Priyanka. Digital Watermarking in Audio Using Least Significant Bit and Discrete Cosine Transform .
 
-Alireza (2020). Watermarking an image into an audio file using Least Significant Bit (LSB) method (https://www.mathworks.com/matlabcentral/fileexchange/55123-watermarking-an-image-into-an-audio-file-using-least-significant-bit-lsb-method), MATLAB Central File Exchange." </body>
-    
-
-
-
+   
 
 <h3>Text in Audio LSB</h3>
 <h5>Example:</h5>
