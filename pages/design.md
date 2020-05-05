@@ -320,13 +320,40 @@ end
 
 <body>Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original dominate bits.</body>
 
-<h5>Example:</h5>
-<body>To hide the letter A whose binary value is 01000001, we would replace the LSBs of the original audio with the binary value of A.
-    1001011<mark>0</mark> 1000110<mark>1</mark> 1101001<mark>0</mark> 0100101<mark>0</mark> 0010011<mark>0</mark> 0100001<mark>0</mark> 0001010<mark>0</mark> 0101011<mark>1</mark>
+<h3> Image in Audio</h3>
+<body>By using the LSB technique, we are trying to embed an image in an audio signal. Most of the prior works have used one major operation to achieve this, the Discrete Cosine Transform (DCT). What this does is take an image which is in N by M pixels, then separated into 8 by 8 or 16 by 16 array of integers. Basically, this is used to break down the image into small parts. This can be mathematically expressed as:</body>
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/cm.PNG?raw=true"  width="200" height="333">
+<body>      Once the image is broken down into binary bits, you divide the audio into equal parts, apply LSB, and add the image and audio together.</body>
+
+<h2>Extracting the image:</h2>
+<body>Essentially, extracting the image from the watermarked file is a very similar process. Divide the audio file with embedded image into equal parts and subtract the original signal. Once that is down apply the inverse of the DCT which can be described mathematically as:</body>
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/fn.PNG?raw=true"  width="200" height="333">
+<body>The result should be the embedded image.
+
+Below is sample of the image in and image out:</body>
+
+<h5>In Image: </h5>
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/ball.PNG?raw=true"  width="200" height="200">
+
+<h5> Out Image: </h5>
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/ball_out.PNG?raw=true"  width="200" height="200">
+
+<body> Image Sources "Pattanshetti, Priyanka. Digital Watermarking in Audio Using Least Significant Bit and Discrete Cosine Transform .
+
+Alireza (2020). Watermarking an image into an audio file using Least Significant Bit (LSB) method (https://www.mathworks.com/matlabcentral/fileexchange/55123-watermarking-an-image-into-an-audio-file-using-least-significant-bit-lsb-method), MATLAB Central File Exchange." </body>
+    
+
+
 
 
 <h3>Text in Audio LSB</h5>
-
+<h5>Example:</h5>
+<body>To hide the letter A whose binary value is 01000001, we would replace the LSBs of the original audio with the binary value of A.
+    1001011<mark>0</mark> 1000110<mark>1</mark> 1101001<mark>0</mark> 0100101<mark>0</mark> 0010011<mark>0</mark> 0100001<mark>0</mark> 0001010<mark>0</mark> 0101011<mark>1</mark>
 <h5>Original Audio </h5>
 
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/w.wav?raw=true" type="audio/wav" controls="controls"></audio>
