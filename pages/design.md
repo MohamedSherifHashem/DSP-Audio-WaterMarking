@@ -350,7 +350,7 @@ Alireza (2020). Watermarking an image into an audio file using Least Significant
 
 
 
-<h3>Text in Audio LSB</h5>
+<h3>Text in Audio LSB</h3>
 <h5>Example:</h5>
 <body>To hide the letter A whose binary value is 01000001, we would replace the LSBs of the original audio with the binary value of A.
     1001011<mark>0</mark> 1000110<mark>1</mark> 1101001<mark>0</mark> 0100101<mark>0</mark> 0010011<mark>0</mark> 0100001<mark>0</mark> 0001010<mark>0</mark> 0101011<mark>1</mark>
@@ -362,5 +362,12 @@ Alireza (2020). Watermarking an image into an audio file using Least Significant
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/outputfile.wav?raw=true?" type="audio/wav" controls="controls"></audio>
 
 <body> Mean-square error = 0.1830 </body>
+
+<h2> Amplitude of input audio</h2>
+
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/input_amplitude.png?raw=true"  width="400" height="400">
+
+<h2> Output Amplitude </h2>
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/output_amplitude.png?raw=true"  width="400" height="400">
 
 
