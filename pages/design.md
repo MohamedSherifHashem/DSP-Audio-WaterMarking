@@ -329,7 +329,7 @@ end
 <h2>Extracting the image:</h2>
 <body>Essentially, extracting the image from the watermarked file is a very similar process. Divide the audio file with embedded image into equal parts and subtract the original signal. Once that is down apply the inverse of the DCT which can be described mathematically as:</body>
 
-<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/fn.PNG?raw=true"  width="200" height="333">
+<img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/fn.PNG?raw=true"  width="300" height="360">
 <body>The result should be the embedded image.
 
 Below is sample of the image in and image out:</body>
