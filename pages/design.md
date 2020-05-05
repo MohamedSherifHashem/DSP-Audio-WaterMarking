@@ -73,6 +73,7 @@ After:
 <h5>Demo of Original Audio</h5>
 
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/OriginalWAVTHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
+MSE = 0.2729
 
 <h1> 
                                                            Sample Code Blocks
