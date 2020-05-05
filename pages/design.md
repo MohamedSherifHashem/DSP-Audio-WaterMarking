@@ -380,10 +380,7 @@ Below is sample of the image in and image out:</body>
 
 <h5> Output Audio </h5>
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/outputfile.wav?raw=true?" type="audio/wav" controls="controls"></audio>
-Before:
-<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/SONG.wav?raw=true?" type="audio/wav" controls="controls"></audio>
-After:
-<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/SONGwatermark.wav?raw=true?" type="audio/wav" controls="controls"></audio>
+
 
    
 <body> Mean-square error = 0.1830 </body>
