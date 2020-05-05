@@ -38,7 +38,7 @@ permalink: "/design/"
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_B.PNG?raw=true"  width="500" height="333">
     <body>Images source:"https://www.researchgate.net/publication/2267187_Digital_Music_Distribution_and_Audio_Watermarking"</body>
 
-h2>Output of our Design Version 1</h2>
+<h2>Output of our Design Version 1</h2>
 <body>To read out the value of the delay from the watermarked audio we used Cepstrum Analysis. The cepstrum is defined by:
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.png?raw=true"  width="500" height="333">
 The image below shows the cepstrum of the output audio of our code, which shows 2 output audios with different delays, 256 and 512.</body>
