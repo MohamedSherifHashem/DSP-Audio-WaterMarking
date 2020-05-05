@@ -35,7 +35,8 @@ permalink: "/background/"
 
 <h5>Tradeoffs: </h5>
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/tradeoff.PNG?raw=true" width="500" height="333">
-<body>All the above characteristics are desirable in any system, but there exists a tradeoff between three of them. As a result w have to balance these propertiess to match the requirments of our application,for example if we want our technique to be robust we have to be ready to give up the inaudiability property and vice versa, so it depends on the functions,priorities and requirments.</body>
+<body>
+    All the above characteristics are desirable in any system, but there exists a tradeoff between three of them. As a result w have to balance these propertiess to match the requirments of our application,for example if we want our technique to be robust we have to be ready to give up the inaudiability property and vice versa, so it depends on the functions,priorities and requirments.</body>
 
 
 <h2>Types of audio watermarking </h2>
@@ -57,5 +58,9 @@ quantitative score that describes the level of error/distortion between them.</b
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/MSE.PNG?raw=true" width="333" height="200">
 
-<body>X represents the original signal while Y represents the watermarked signal.</body>
+<body>
+    
+    X represents the original signal while Y represents the watermarked signal.
+    
+</body>
 
