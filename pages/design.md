@@ -42,11 +42,11 @@ permalink: "/design/"
 <body>The image below shows the output audio of our code, which shows a 2 output audios with different delay, 256 and 512.</body>
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
 
-<h5> 512 Peaks of ccps Function</h5>
+<h5> 512 Peeks of ccps Function</h5>
 <img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/512%20Peek%20in%20Peek%20finder.png?raw=true"  width="500" height="333">
 
-<h5> Graphical Example of Output Bit = 1  </h5>
-<img src= "https://github.com/kpisila/AudioWatermarking/blob/master/Ben/Graphical%20Example%20of%20Output%20Bit%20=%201.png?raw=true"  width="500" height="333">
+<h5> 512 Peek of auto Cepstrum Function</h5>
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/512%20Peek%20in%20Peek%20finder%20auto%20Cep.png?raw=true"  width="500" height="333">
 
 <h5>Demo of Watermarked Audio</h5>
 
