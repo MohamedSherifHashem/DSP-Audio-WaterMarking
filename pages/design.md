@@ -50,7 +50,7 @@ permalink: "/design/"
 
 <h5>Demo of Watermarked Audio</h5>
 
-<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/mp3" controls="controls"></audio>
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
 
 
 <h1> 
