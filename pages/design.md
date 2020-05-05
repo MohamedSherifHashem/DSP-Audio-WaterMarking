@@ -38,16 +38,41 @@ permalink: "/design/"
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Echo_B.PNG?raw=true"  width="500" height="333">
     <body>Images source:"https://www.researchgate.net/publication/2267187_Digital_Music_Distribution_and_Audio_Watermarking"</body>
 
-<h2>Output of our Design</h2>
-<body>The image below shows the output audio of our code, which shows a 2 output audios with different delay, 256 and 512.</body>
+h2>Output of our Design Version 1</h2>
+<body>To read out the value of the delay from the watermarked audio we used Cepstrum Analysis. The cepstrum is defined by:
+<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.png?raw=true"  width="500" height="333">
+The image below shows the cepstrum of the output audio of our code, which shows 2 output audios with different delays, 256 and 512.</body>
 <img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
 
-<h5> 512 Peaks </h5>
-<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/peak512.png?raw=true"  width="500" height="333">
+<h5> Determining the location of the Peak </h5>
+To determine the location of the peak an average and standard deviation are taken around the expected peak location.
+When the maximum value near the expected peak location is more than a certain number of standard deviations above the average we consider it a peak.
+To determine which value to use to provide the best overall results we ran the same watermarked audio through with different thresholds.
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/CepstrumErrorPercent.png?raw=true"  width="500" height="333">
+even at the optimal level the error percentage was above 50% so we changed our analysis to the Auto Correlated Cepstrum which is defined by:
+<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/autoceps.png?raw=true"  width="500" height="333">
+Below is the result of determining the optimal threshold for determining a peak.
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/AutoCepstrumErrorPercent.png?raw=true"  width="500" height="333">
+The optimal value was still not providing good enough results even though the Auto-Cepstrum appears far superior as shown below:
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/AutoCepstrum512Delay.png?raw=true"  width="500" height="333">
 
-<h5> Graphical Example of Output Bit = 1  </h5>
-<img src= "https://github.com/kpisila/AudioWatermarking/blob/master/Ben/Graphical%20Example%20of%20Output%20Bit%20=%201.png?raw=true"  width="500" height="333">
+The best solution was to simply assume that there would be a peak at one of the two locations specified and compare the peaks at these locations. The larger peak determined the bit value.
+This produced less than ideal but usable results below is the before and after audio with the original watermark message compared to the read watermark message.
+Before:
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/KillerQueen.mp3?raw=true?" type="audio/wav" controls="controls"></audio>
+After:
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/KillerQueenWatermarked.wav?raw=true?" type="audio/wav" controls="controls"></audio>
 
+<h5> Before and After String </h5>
+<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/KillerQueenWatermark.png?raw=true"  width="500" height="333">
+
+<h5>Demo of Watermarked Audio</h5>
+
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Original Audio</h5>
+
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/OriginalWAVTHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
 
 <h1> 
                                                            Sample Code Blocks
@@ -324,7 +349,7 @@ end
 <body>By using the LSB technique, we are trying to embed an image in an audio signal. Most of the prior works have used one major operation to achieve this, the Discrete Cosine Transform (DCT). What this does is take an image which is in N by M pixels, then separated into 8 by 8 or 16 by 16 array of integers. Basically, this is used to break down the image into small parts. This can be mathematically expressed as:</body>
 
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/cm.PNG?raw=true"  width="200" height="333">
-<body>      Once the image is broken down into binary bits, you divide the audio into equal parts, apply LSB, and add the image and audio together.</body>
+<body>      Once the image is broken down into binary bits, you divide the audio into equal parts, apply LSB, and add the image and audio together.By using the Mean Squared Erro to check the difference between the two audio files. It gave an error of .0025. Which is exceptionally good conisdering 0 correlates to identical signals.</body>
 
 <h2>Extracting the image:</h2>
 <body>Essentially, extracting the image from the watermarked file is a very similar process. Divide the audio file with embedded image into equal parts and subtract the original signal. Once that is down apply the inverse of the DCT which can be described mathematically as:</body>
@@ -355,7 +380,12 @@ Below is sample of the image in and image out:</body>
 
 <h5> Output Audio </h5>
 <audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/outputfile.wav?raw=true?" type="audio/wav" controls="controls"></audio>
+Before:
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/SONG.wav?raw=true?" type="audio/wav" controls="controls"></audio>
+After:
+<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/SONGwatermark.wav?raw=true?" type="audio/wav" controls="controls"></audio>
 
+   
 <body> Mean-square error = 0.1830 </body>
 
 <h2> Amplitude of input audio</h2>
