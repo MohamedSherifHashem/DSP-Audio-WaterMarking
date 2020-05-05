@@ -316,4 +316,12 @@ end
   </code>
 </pre>
 
+<h2>Least significant bit watermarking </h2>
+
+<body>Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original dominate bits.</body>
+
+<h5>Example:</h5>
+
+
+
 
