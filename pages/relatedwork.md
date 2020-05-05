@@ -22,5 +22,10 @@ permalink: "/relatedwork/"
 <img src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/bitstream.png?raw=true"  width="500" height="333">
 
 </body>
+
+
+    Sources "Pattanshetti, Priyanka. Digital Watermarking in Audio Using Least Significant Bit and Discrete Cosine Transform .
+
+Alireza (2020). Watermarking an image into an audio file using Least Significant Bit (LSB) method (https://www.mathworks.com/matlabcentral/fileexchange/55123-watermarking-an-image-into-an-audio-file-using-least-significant-bit-lsb-method), MATLAB Central File Exchange." </body>
 </html>
 
