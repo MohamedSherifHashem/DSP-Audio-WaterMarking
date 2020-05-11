@@ -11,8 +11,9 @@ permalink: "/roadmap/"
 ## Ideas and possible new features
 {: .t30 }
 
-Design in progress .....
+* Adding more user defined parameters to echo watermarking such as user defined echo mix ratio and bit storage rate.
 
+* Random sequence distributing least significant bit watermarks.
 
 
 ## Done
@@ -20,3 +21,6 @@ Design in progress .....
 * [<s>Researching different watermarking techniques </s>]
 * [<s>Write Code to read an audio signal </s>]
 * [<s>Launch Website</s>]
+* [<s>Echo Watermarking working</s>]
+* [<s>Bitstream Watermarking Working</s>]
+* [<s>Instructions Written</s>]
