@@ -77,15 +77,51 @@ permalink: "/design/"
 		<h5> Input String (bottom) and Output String (top) </h5>
 		<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/KillerQueenWatermark.png?raw=true"  width="500" height="333">
 
-		<h5>Second Demo of Watermarked Audio</h5>
+<h1> 
+			<center>Original and Watermarked Audio</center>
+		</h1>
+
+<h5>Original Audio Clip of Here Again - A Will Away</h5>
+
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/OriginalWAVTHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Watermarked Audio Clip Here Again - A Will Away</h5>
 		
 		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/128-256EchoWatermarkedHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
 
-		<h5>Original Audio for Second Demo</h5>
-
-		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/OriginalWAVTHere.wav?raw=true" type="audio/wav" controls="controls"></audio>
 		MSE = 0.2729
+<h5>Original Audio Clip of Beethoven's 5th Symphony</h5>
 
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/Original%20Audio/WAVT5th.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Watermarked Audio Clip of Beethoven's 5th Symphony</h5>
+		
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/echos/EchoWatermarked5th.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Original Audio Clip of Vampires - The Midnight</h5>
+
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/Original%20Audio/WAVTVamp.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Watermarked Audio Clip of Vampires - The Midnight</h5>
+		
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/echos/EchoWatermarkedVamp.wav?raw=true" type="audio/wav" controls="controls"></audio>
+		
+<h5>Original Audio Clip of Anvil - Lorn</h5>
+
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/Original%20Audio/WAVTAnvil.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Watermarked Audio Clip of Anvil - Lorn</h5>
+		
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/echos/EchoWatermarkedAnvil.wav?raw=true" type="audio/wav" controls="controls"></audio>		
+		
+<h5>Original Audio Clip of No Ticket - The Menzingers</h5>
+
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/Original%20Audio/WAVTNoT.wav?raw=true" type="audio/wav" controls="controls"></audio>
+
+<h5>Demo of Watermarked Audio Clip of No Ticket - The Menzingers</h5>
+		
+		<audio src="https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/Audio%20Files/echos/EchoWatermarkedNoT.wav?raw=true" type="audio/wav" controls="controls"></audio>
+	
 		<h1> 
 			<center>Sample Code Blocks</center>
 		</h1>
