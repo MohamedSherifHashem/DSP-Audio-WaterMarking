@@ -43,7 +43,7 @@ permalink: "/design/"
 
 		<h2>Output of our Design Version 1</h2>
 		<p>To read out the value of the delay from the watermarked audio we used Cepstrum Analysis. The cepstrum is defined by:</p>
-		<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.png?raw=true"  width="500" height="333">
+		<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/ceps.png?raw=true"  width="772" height="146">
 		<p>The image below shows the cepstrum of the output audio of our code, which shows 2 output audios with different delays, 256 and 512.</p>
 		<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/cepstrumBothDelayEcho.png?raw=true"  width="500" height="333">
 
@@ -55,7 +55,7 @@ permalink: "/design/"
 		</p>
 		<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/CepstrumErrorPercent.png?raw=true"  width="500" height="333">
 		<p>Even at the optimal level the error percentage was above 50% so we changed our analysis to the Auto Correlated Cepstrum which is defined by:</p>
-		<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/autoceps.png?raw=true"  width="500" height="333">
+		<img src="https://github.com/kpisila/AudioWatermarking/blob/master/EchoWatermarking/OutputAudio/autoceps.png?raw=true"  width="888" height="141">
 		<p>Below is the result of determining the optimal threshold for determining a peak.</p>
 		<img src= "https://github.com/MohamedSherifHashem/DSP-Audio-WaterMarking/blob/gh-pages/images/AutoCepstrumErrorPercent.png?raw=true"  width="500" height="333">
 		<p>The optimal value was still not providing good enough results even though the Auto-Cepstrum appears far superior as shown below:</p>
@@ -90,247 +90,204 @@ permalink: "/design/"
 			<center>Sample Code Blocks</center>
 		</h1>
 
-		<h2>
-			Taking Watermark string and filepath as input from User
-		</h2>
 
-		<pre>
-		  <code>
-				[bitstream , filepath, delay0, delay1] = addwatermark_v3();
-				AddEchoFunction_v3(bitstream, filepath, delay0, delay1);
-			
-		  </code>
-		</pre>
 
 
 		<h2> Adding the watermark </h2>
-
-		
+		<pre>
 			<code class="language-matlab">
-				    code = input(prompt,'s'); % getting user input and storeing it
+code = input(prompt,'s'); % getting user input and storeing it
 
-					b = size(code); % getting the size of user input
+b = size(code); % getting the size of user input
 
-					if (b <= c)  % checking to make sure its less than 50 characters
+if (b <= c)  % checking to make sure its less than 50 characters
 
-						z= double(code); % getting ASCII value
+	z= double(code); % getting ASCII value
 
-						x = dec2bin(z); % taking ASCII value and turning into binary
+	x = dec2bin(z); % taking ASCII value and turning into binary
 
-						%this turns the code into a [stringLength] by 7 matrix so I resized it into y
+	%this turns the code into a [stringLength] by 7 matrix so I resized it into y
 
-						y= reshape(x',[1,numel(x)]); % resize
+	y= reshape(x',[1,numel(x)]); % resize
 
-						a = size(y); %checking the size of which turns out is 1 by 70 not 1 by 80
+	a = size(y); %checking the size of which turns out is 1 by 70 not 1 by 80
 
-						Y = mat2cell(y,1,ones(numel(y),1)); % taking the reshaped and creating a cell
+	Y = mat2cell(y,1,ones(numel(y),1)); % taking the reshaped and creating a cell
 
-						K = convertCharsToStrings(Y); % takes cell on converts to a string
+	K = convertCharsToStrings(Y); % takes cell on converts to a string
 
-						P = str2double(K); %turns string into double.
-						
-						bitstream = P;
+	P = str2double(K); %turns string into double.
+	
+	bitstream = P;
 			</code>
+		</pre>
 		
-
 		<h2>Add Echo Function </h2>
 
 		<pre>
 			<code class="language-matlab">
-				function [] = AddEchoFunction_v3(bitstream, filepath, delay0, delay1)
-				spf = 32768;
-				maxValue = 0;
-				for i = 1:2	%this code runs twice to create the 2 echo kernels
+function [] = AddEchoFunction_v3(bitstream, filepath, delay0, delay1)
+spf = 32768;
+maxValue = 0;
+for i = 1:2	%this code runs twice to create the 2 echo kernels
 
-					%%%%%%%%%%%%%%%%%%%%% Create MATLAB objects to read the audio file %%%%%%%%
-					afr1 = dsp.AudioFileReader(filepath, 'SamplesPerFrame', spf);
-					afr2 = dsp.AudioFileReader(filepath, 'SamplesPerFrame', spf);
+	%%%%%%%%%%%%%%%%%%%%% Create MATLAB objects to read the audio file %%%%%%%%
+	afr1 = dsp.AudioFileReader(filepath, 'SamplesPerFrame', spf);
+	afr2 = dsp.AudioFileReader(filepath, 'SamplesPerFrame', spf);
 
-					%%%%%%%%%%%%%%%%%% Create MATLAB objects to write new audio files %%%%%%%%%
+	%%%%%%%%%%%%%%%%%% Create MATLAB objects to write new audio files %%%%%%%%%
 
-					afw1 = dsp.AudioFileWriter('Echo1.wav', 'FileFormat', 'WAV');
-					afw2 = dsp.AudioFileWriter('Echo2.wav', 'FileFormat', 'WAV');
-					
-					%%%%%%%%%%%% every time an audio file reader is called, it %%%%%%%%%%%%%%
-					%%%%%%%%%%%% returns the next spf x 2 array of the file    %%%%%%%%%%%%%%
-					%%%%%%%%%%%% If one copy is called first before we start   %%%%%%%%%%%%%%
-					%%%%%%%%%%%% The loop, it is ahead by spf samples.         %%%%%%%%%%%%%%
-					if i == 1
-						delay = delay0;    %%%%%%%% Use each input delay for 1 kernel
-					end
-					if i == 2
-						delay = delay1;
-					end
-					%%%%%%%%%%%% Create temporary variables for use in the loop %%%%%%%%%%%%%
-					afterDelay = delay + 1;
-					startSecond = spf + 1 - delay;
-					endFirst = spf - delay;
-					counter = 0;
-					audio2 = afr2();
-					audio4 = zeros(spf,2);  %initialize temp matrix for splicing
-					firsthalf = audio2(afterDelay:end,1:2);%take the second half of the first chunk
-					%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	afw1 = dsp.AudioFileWriter('Echo1.wav', 'FileFormat', 'WAV');
+	afw2 = dsp.AudioFileWriter('Echo2.wav', 'FileFormat', 'WAV');
+	
+	%%%%%%%%%%%% every time an audio file reader is called, it %%%%%%%%%%%%%%
+	%%%%%%%%%%%% returns the next spf x 2 array of the file    %%%%%%%%%%%%%%
+	%%%%%%%%%%%% If one copy is called first before we start   %%%%%%%%%%%%%%
+	%%%%%%%%%%%% The loop, it is ahead by spf samples.         %%%%%%%%%%%%%%
+	if i == 1
+		delay = delay0;    %%%%%%%% Use each input delay for 1 kernel
+	end
+	if i == 2
+		delay = delay1;
+	end
+	%%%%%%%%%%%% Create temporary variables for use in the loop %%%%%%%%%%%%%
+	afterDelay = delay + 1;
+	startSecond = spf + 1 - delay;
+	endFirst = spf - delay;
+	counter = 0;
+	audio2 = afr2();
+	audio4 = zeros(spf,2);  %initialize temp matrix for splicing
+	firsthalf = audio2(afterDelay:end,1:2);%take the second half of the first chunk
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-					while ~isDone(afr1)
-						
-						audio4(1:endFirst,1:2) = firsthalf;  %use it as the first half of the splice
+	while ~isDone(afr1)
+		
+		audio4(1:endFirst,1:2) = firsthalf;  %use it as the first half of the splice
 
-						audio1 = afr1();
-						audio2 = afr2();                                    
-																			%use the first half of the
-						audio4(startSecond:end,1:2) = audio2(1:delay,1:2);  %second chunk as the second
-																			%half of the splice.
-																	
-						firsthalf = audio2(afterDelay:end,1:2);%take the second half of the second 
-																%chunk and save it for next time
-						audio3 = (audio1 * 0.7) + (audio4 * .3);
+		audio1 = afr1();
+		audio2 = afr2();                                    
+															%use the first half of the
+		audio4(startSecond:end,1:2) = audio2(1:delay,1:2);  %second chunk as the second
+															%half of the splice.
+													
+		firsthalf = audio2(afterDelay:end,1:2);%take the second half of the second 
+												%chunk and save it for next time
+		audio3 = (audio1 * 0.7) + (audio4 * .3);
 
-						maxValue = max(max(audio3), maxValue);
-						if(i == 1)
-							afw1(audio3);            %save the audio chunk
-						end
-						if(i == 2)
-							afw2(audio3);            %save the audio chunk
-						end
-						counter = counter + 1;  %then move to the next chunk
-					end
-					release(afr1); 
-					release(afr2); 
-					release(adw);
-					release(afw1);
-					release(afw2);
-				end
+		maxValue = max(max(audio3), maxValue);
+		if(i == 1)
+			afw1(audio3);            %save the audio chunk
+		end
+		if(i == 2)
+			afw2(audio3);            %save the audio chunk
+		end
+		counter = counter + 1;  %then move to the next chunk
+	end
+	release(afr1); 
+	release(afr2); 
+	release(adw);
+	release(afw1);
+	release(afw2);
+end
 
-				%%%%% read back in the two created echo kernels 4096 samples at a time 	%%%%%%%
-				%%%%% and create a MATLAB object to write the watermarked audio 		%%%%%%%
-				spf2 = 4096;
-				afr3 = dsp.AudioFileReader('Echo1.wav', 'SamplesPerFrame', spf2);
-				afr4 = dsp.AudioFileReader('Echo2.wav', 'SamplesPerFrame', spf2);
-				totalFrames = counter * 8; %defines the total number of bits to be encoded
-				afw2 = dsp.AudioFileWriter('EchoWatermarked.wav', 'FileFormat', 'WAV');
+%%%%% read back in the two created echo kernels 4096 samples at a time 	%%%%%%%
+%%%%% and create a MATLAB object to write the watermarked audio 		%%%%%%%
+spf2 = 4096;
+afr3 = dsp.AudioFileReader('Echo1.wav', 'SamplesPerFrame', spf2);
+afr4 = dsp.AudioFileReader('Echo2.wav', 'SamplesPerFrame', spf2);
+totalFrames = counter * 8; %defines the total number of bits to be encoded
+afw2 = dsp.AudioFileWriter('EchoWatermarked.wav', 'FileFormat', 'WAV');
 
-				%%%%% Set up counters to repeat the given string through the entire audio %%%%%%
-				mixCounter = 1;
-				lengthb = length(bitstream);
-				repeat = 0;
+%%%%% Set up counters to repeat the given string through the entire audio %%%%%%
+mixCounter = 1;
+lengthb = length(bitstream);
+repeat = 0;
 
-				%%%%% Mix the two echo kernels by writing from one or the other depending 	%%%%%
-				%%%%% on the value of the current bit in the input bitstream 				%%%%%
-				while mixCounter <= totalFrames
-					audio1 = afr3();
-					audio2 = afr4();
-					
-					if(bitstream(mixCounter - repeat*lengthb) == 0) %Mix
-						afw2(audio1);
-					end
-					if(bitstream(mixCounter - repeat*lengthb) == 1)
-						afw2(audio2);
-					end
-					
-					mixCounter = mixCounter + 1;
-					if(mixCounter > lengthb * (repeat + 1)) %Repeat
-						repeat = repeat + 1;
-					end
-				end
+%%%%% Mix the two echo kernels by writing from one or the other depending 	%%%%%
+%%%%% on the value of the current bit in the input bitstream 				%%%%%
+while mixCounter <= totalFrames
+	audio1 = afr3();
+	audio2 = afr4();
+	
+	if(bitstream(mixCounter - repeat*lengthb) == 0) %Mix
+		afw2(audio1);
+	end
+	if(bitstream(mixCounter - repeat*lengthb) == 1)
+		afw2(audio2);
+	end
+	
+	mixCounter = mixCounter + 1;
+	if(mixCounter > lengthb * (repeat + 1)) %Repeat
+		repeat = repeat + 1;
+	end
+end
 			</code>
 		</pre>
 
 		<h5> ReadWatermarkedAudio </h5>
 		<pre>
 		  <code>
-		function [opBit, error] = readWMSection()
-		error = 0;
-		opBit = zeros( 1, 2);
-		opBitidx = 1;
-		%fileSect will replace audioFile.wav
-		afr = dsp.AudioFileReader('EchoWatermarkedTest.wav', 'SamplesPerFrame', 4096);
+while ~isDone(afr) 
+	audio = afr();
+	%%%%%%%%%%% Take the Auto-Correlated Cepstrum %%%%%%%%%%%%%%%%%%
+	oneChannel = audio(1:4096,1:1);
+	AutoCepstrum = real((ifft(log(fft(oneChannel)).^2)).^2);
+	c = AutoCepstrum;
 
-		%adw = audioDeviceWriter('SampleRate', afr.SampleRate);
+	%parameters to define areas around expected peak locations
+	RD0a = Delay0 - 50;
+	RD0b = Delay0 - 5;
+	RD0c = Delay0 + 5;
+	RD0d = Delay0 + 50;
+	RD1a = Delay1 - 50;
+	RD1b = Delay1 - 5;
+	RD1c = Delay1 + 5;
+	RD1d = Delay1 + 50;
 
+	%get mean and standard deviation around the peak, 
+	%but not including the peak
+	avgDelay0 = mean(mean([c(RD0a:RD0b), c(RD0c:RD0d)]));
+	Delay0StdDev = mean(std([c(RD0a:RD0b), c(RD0c:RD0d)]));
+	avgDelay1 = mean(mean([c(RD1a:RD1b), c(RD1c:RD1d)]));
+	Delay1StdDev = mean(std([c(RD1a:RD1b), c(RD1c:RD1d)]));
+	
+	%Get the peak value at each of the expected peak locations
+	%in terms of standard deviations above the mean
+	Delay0value = (max(c(RD0b:RD0c)) - avgDelay0) / Delay0StdDev;
+	Delay1value = (max(c(RD1b:RD1c)) - avgDelay1) / Delay1StdDev;
+	
+	%assuming that there is a peak at one of the locations
+	%the location with the higher relative peak determines
+	%the output bit value. Peak height varries so no single
+	%threshold was sufficient
+	if Delay0value >= Delay1value
+			bitstream = [bitstream, 0];
+	end
+	if Delay1value > Delay0value
+			bitstream = [bitstream, 1];
+	end
+end
+			</code>
+		</pre>
+		<h2>
+			Converting Bitstream Back to String
+		</h2>
 
-		while ~isDone(afr)
-			audio = afr();
-		 
+		<pre>
+		  <code>
+%%%%%% First clip the bitstream to whole 7-bit chars
+BitLength = numel(opBit);
+numChars = floor(BitLength / 7);
+numUsableBits = floor(numChars * 7);
+truncated = opBit(1:numUsableBits);
 
-		release(afr); 
-		%release(adw);
-		oneChannel = audio(1:4096,1:1);
-		c = cceps(oneChannel);
-		t = 1:1:4096;
-
-
-		figure(1), clf, hold on
-		plot(t,c)
-
-
-		range256 = [245 265];
-		range512 = [500 520]; 
-		% i = range512(1);
-		% while i< range512(2)
-		peeksC = find(diff(sign(diff(c)))<0)+1;
-
-		%plots all peek values 
-		%plot(t(peeksC),c(peeksC),'ro','linew',2,'markersize',10,'markerfacecolor','y')
-
-		%taking the index from the local maxima around the 256 and 512 points
-		i = 1; 
-		i256 = zeros( 1, 2);
-		i512 = zeros( 1, 2); 
-		u = 1;
-		p = 1; 
-		while i<= length(peeksC)
-			if peeksC(i) > 200 && peeksC(i) < 300 
-				i256(u) = c(peeksC(i));
-				u = u + 1;
-			end 
-			if peeksC(i) > 475 && peeksC(i) < 530 
-				i512(p) = c(peeksC(i));
-				p = p + 1; 
-			end 
-			i = i +1; 
-		end
-
-		avg256 = mean(i256);
-		stdev256 = std(i256);
-		avg512 = mean(i512);
-		stdev512 = std(i512);
-
-		%statistically different point to compare to 
-		comp256 = avg256 + 3 * stdev256;
-		comp512 = avg512 + 3 * stdev512;
-
-
-		[maxLval256,maxLidx256] = max(c(range256(1):range256(2)));
-		%plot(t(maxLidx256+range256(1)-1),maxLval256,'ko','linew',2,'markersize',5,'markerfacecolor','g')
-
-		[maxLval512,maxLidx512] = max(c(range512(1):range512(2)));
-		%plot(t(maxLidx512+range512(1)-1),maxLval512,'ko','linew',2,'markersize',5,'markerfacecolor','g')
-
-
-		both = 0; 
-		if comp256 < maxLval256
-			opBit = [opBit, 0]; 
-			both = both + 1; 
-		end
-		if comp512 < maxLval512
-			opBit = [opBit, 1]; 
-			both = both + 1;
-		end 
-		if both == 0 || both == 2
-			error = error + 1;
-		end 
-		disp('Error');
-		disp(error);
-		disp(opBit(opBitidx));
-		opBitidx = opBitidx + 1;
-
-
-
-		end
-		end
+%%%%%% Then convert the stream of bits into a character array
+reshaped = (reshape(truncated,7,[]).'); %place each group of 7 bits in 1 row
+opBitTemp = num2str(reshaped);% convert the rows of 1s and 0s to strings
+i = num2cell(opBitTemp, 2);% covert the array to a cell array(required by bin2dec)
+decoded = char(bin2dec(i).');% converts into characters
 		  </code>
 		</pre>
-
 		<h2>Least significant bit watermarking </h2>
 
 		Least significant bid watermarking (LSB) is one of the simplest techniques there are out there for audio signals. Essentially what is does is it allows the hidden message to be embedded in the signal so it can not be detected via audio or visual. By changing the LSB in any chunk of data, the watermark can be hidden without changing the original audio file.
