@@ -105,7 +105,7 @@ permalink: "/design/"
 
 		<h2> Adding the watermark </h2>
 
-		<pre>
+		
 			<code class="language-matlab">
 				    code = input(prompt,'s'); % getting user input and storeing it
 
@@ -131,7 +131,7 @@ permalink: "/design/"
 						
 						bitstream = P;
 			</code>
-		</pre>
+		
 
 		<h2>Add Echo Function </h2>
 
