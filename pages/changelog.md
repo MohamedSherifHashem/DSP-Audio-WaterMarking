@@ -19,7 +19,7 @@ permalink: "/changelog/"
 :	How-to instructions available.
 :	Code available for public download.
 
-2020-5-5 // Version 1.1
+2020-5-11 // Version 1.1
 :   Echo Watermarking Code organized and commented, ready for improvements
 
 
